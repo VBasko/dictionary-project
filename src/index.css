@@ -21,3 +21,14 @@ code {
 .header {
   margin-top: 30px;
 }
+
+.dictionary__container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dictionary__container > div.active h2 {
+  border-bottom: 2px solid black;
+}
