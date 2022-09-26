@@ -4,7 +4,7 @@ import DictionaryInfo from "./DictionaryInfo";
 
 function Dictionary() {
   let [keyword, setKeyword] = useState("");
-  let [results, setResults] = useState({});
+  let [results, setResults] = useState(null);
 
   function handleResponse(response) {
     setResults(response.data[0]);
@@ -26,7 +26,7 @@ function Dictionary() {
           </form>
         </div>
       </header>
-      <DictionaryInfo />
+      <DictionaryInfo results={results} />
     </>
   );
 }
