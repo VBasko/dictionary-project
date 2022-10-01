@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 [class*="__container"] {
   max-width: 1180px;
   margin: 0 auto;
@@ -31,4 +37,20 @@ code {
 
 .dictionary__container > div.active h2 {
   border-bottom: 2px solid black;
+}
+
+.Meaning > div {
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.Synonyms {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+ul.Synonyms {
+  list-style: none;
 }
