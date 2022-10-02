@@ -1,14 +1,11 @@
 import React from "react";
+import AudioButton from "./AudioButton";
 
 function Phonetic(props) {
-  console.log(props.phonetic);
   if (props.phonetic.audio && props.phonetic.text) {
     return (
       <div className="Phonetic">
-        <h2>Audio &amp; text</h2>
-        <a href={props.phonetic.audio} target="_blank" rel="noreferrer">
-          Listen
-        </a>
+        <AudioButton audio={props.phonetic.audio} />
         {props.phonetic.text}
       </div>
     );
@@ -17,9 +14,7 @@ function Phonetic(props) {
   } else {
     return (
       <div className="Phonetic">
-        <a href={props.phonetic.audio} target="_blank" rel="noreferrer">
-          Listen
-        </a>
+        <AudioButton audio={props.phonetic.audio} />
       </div>
     );
   }

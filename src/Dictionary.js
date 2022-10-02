@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import DictionaryInfo from "./DictionaryInfo";
+import { GiOpenBook } from "react-icons/gi";
 
 function Dictionary() {
   let [keyword, setKeyword] = useState("");
@@ -20,7 +21,10 @@ function Dictionary() {
     <>
       <header className="header">
         <div className="header__container">
-          <h1>Dictionary</h1>
+          <h1>
+            <GiOpenBook />
+            Dictionary
+          </h1>
           <form onSubmit={search}>
             <input type="search" onChange={(e) => setKeyword(e.target.value)} />
           </form>

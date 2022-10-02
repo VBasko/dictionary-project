@@ -24,16 +24,6 @@ function dictionaryInfo(props) {
               );
             })}
           </div>
-          {/*
-        <div className="synonyms">
-          <h2>synonyms</h2>
-        </div>
-        <div className="antonyms">
-          <h2>antonyms</h2>
-        </div>
-        <div className="origin">
-          <h2>origin</h2>
-        </div> */}
         </section>
       </main>
     );
