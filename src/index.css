@@ -25,7 +25,39 @@ code {
 }
 
 .header {
-  margin-top: 30px;
+  background-color: #554ff4;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header__title {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  color: #f7f7f7;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.header form {
+  width: 100%;
+  border-bottom: solid 2px #f7f7f7;
+  height: 60px;
+}
+
+.header form input {
+  width: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  height: 100%;
+  font-size: 48px;
+  color: #f7f7f7;
 }
 
 .dictionary__container {

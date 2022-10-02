@@ -21,10 +21,10 @@ function Dictionary() {
     <>
       <header className="header">
         <div className="header__container">
-          <h1>
+          <div className="header__title title">
             <GiOpenBook />
-            Dictionary
-          </h1>
+            <h1>Dictionary</h1>
+          </div>
           <form onSubmit={search}>
             <input type="search" onChange={(e) => setKeyword(e.target.value)} />
           </form>
