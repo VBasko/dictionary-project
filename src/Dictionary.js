@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import DictionaryInfo from "./DictionaryInfo";
 import { GiOpenBook } from "react-icons/gi";
+import "./Dictionary.css";
 
 function Dictionary() {
   let [keyword, setKeyword] = useState("");
@@ -26,11 +27,18 @@ function Dictionary() {
             <h1>Dictionary</h1>
           </div>
           <form onSubmit={search}>
-            <input type="search" onChange={(e) => setKeyword(e.target.value)} />
+            <input
+              type="search"
+              placeholder="What would you like to search?"
+              onChange={(e) => setKeyword(e.target.value)}
+            />
           </form>
         </div>
       </header>
       <DictionaryInfo results={results} />
+      <footer className="footer">
+        <div className="footer__container">Coded by Viktoriia Basko</div>
+      </footer>
     </>
   );
 }

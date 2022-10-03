@@ -1,21 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto&family=Roboto+Mono&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Playfair Display", serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+*::selection {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #cb4ff4;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 [class*="__container"] {
@@ -24,52 +29,15 @@ code {
   padding: 0 15px;
 }
 
-.header {
+.footer {
   background-color: #554ff4;
-  padding-top: 30px;
+  color: rgb(233, 232, 232);
+  text-align: center;
   padding-bottom: 30px;
+  font-family: "Roboto", sans-serif;
 }
 
-.header__title {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  font-size: 28px;
-  color: #f7f7f7;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 28px;
-}
-
-.header form {
-  width: 100%;
-  border-bottom: solid 2px #f7f7f7;
-  height: 60px;
-}
-
-.header form input {
-  width: 100%;
-  background: transparent;
-  outline: none;
-  border: none;
-  height: 100%;
-  font-size: 48px;
-  color: #f7f7f7;
-}
-
-.dictionary__container {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.dictionary__container > div.active h2 {
-  border-bottom: 2px solid black;
-}
+/*-----------------------*/
 
 .Meaning > div {
   margin-top: 20px;
