@@ -37,7 +37,15 @@ function Dictionary() {
       </header>
       <DictionaryInfo results={results} />
       <footer className="footer">
-        <div className="footer__container">Coded by Viktoriia Basko</div>
+        <div className="footer__container">
+          <a
+            href="https://github.com/VBasko/dictionary-project"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Coded by Viktoriia Basko
+          </a>
+        </div>
       </footer>
     </>
   );

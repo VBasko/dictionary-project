@@ -38,6 +38,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.footer a {
+  color: inherit;
+}
+
 /*-----------------------*/
 
 .Synonyms {
