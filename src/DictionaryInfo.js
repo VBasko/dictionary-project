@@ -9,13 +9,15 @@ function dictionaryInfo(props) {
       <main className="dictionary">
         <section className="dictionary__container">
           <h2>{props.results.word}</h2>
-          {props.results.phonetics.map(function (phonetic, index) {
-            return (
-              <div key={index}>
-                <Phonetic phonetic={phonetic} />
-              </div>
-            );
-          })}
+          <div className="phonetics">
+            {props.results.phonetics.map(function (phonetic, index) {
+              return (
+                <div key={index}>
+                  <Phonetic phonetic={phonetic} />
+                </div>
+              );
+            })}
+          </div>
           {props.results.meanings.map(function (meaning, index) {
             return (
               <div key={index}>
