@@ -18,13 +18,15 @@ function dictionaryInfo(props) {
               );
             })}
           </div>
-          {props.results.meanings.map(function (meaning, index) {
-            return (
-              <div key={index}>
-                <Meaning meaning={meaning} />
-              </div>
-            );
-          })}
+          <div className="meanings">
+            {props.results.meanings.map(function (meaning, index) {
+              return (
+                <div key={index}>
+                  <Meaning meaning={meaning} />
+                </div>
+              );
+            })}
+          </div>
         </section>
       </main>
     );

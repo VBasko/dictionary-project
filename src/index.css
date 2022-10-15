@@ -40,16 +40,15 @@ body {
 
 /*-----------------------*/
 
-.Meaning > div {
-  margin-top: 20px;
-  border: 1px solid black;
+.Synonyms {
+  display: flex;
+  font-size: 24px;
+  color: #554ff4;
+  font-style: italic;
 }
 
-.Synonyms {
-  display: grid;
-  column-gap: 20px;
-  row-gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
+.Synonyms > *:not(:last-child) {
+  margin-right: 24px;
 }
 
 ul.Synonyms {

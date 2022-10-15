@@ -1,0 +1,38 @@
+.Meaning h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.Meaning h3::after {
+  content: "";
+  width: 150px;
+  height: 2px;
+  background-color: #554ff4;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.Meaning li {
+  padding-left: 10px;
+}
+
+.Meaning li:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.Meaning li p {
+  text-align: left;
+  font-size: 16px;
+}
+
+.Meaning p.definition {
+  margin-bottom: 8px !important;
+}
+
+.Meaning .example {
+  color: #6d6d6d;
+}
